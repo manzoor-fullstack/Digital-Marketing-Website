@@ -21,9 +21,9 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="text-5xl md:text-7xl font-bold leading-tight"
         >
-          We Create
+          Predicting 
           <span className="bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text">
-            {" "}Digital Impact
+            {" "}Possibilities, Building Realities
           </span>
         </motion.h1>
 

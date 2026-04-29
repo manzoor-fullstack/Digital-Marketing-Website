@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +28,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <h1 className="text-white font-bold text-xl">
-          Prodigmar
+          ProPhecy
         </h1>
 
         {/* Links */}
@@ -72,13 +73,15 @@ export default function Navbar() {
   >
     Contact
   </Link>
+  {/* Theme Button */}
+  <ThemeToggle />
 
 </nav>
 
         {/* CTA */}
-        <button className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white text-sm">
+        {/* <button className="px-5 py-2 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white text-sm">
           Get Quote
-        </button>
+        </button> */}
 
       </div>
     </header>

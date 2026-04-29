@@ -25,7 +25,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-purple-500 to-orange-500"></div>
-            <h2 className="text-xl font-semibold text-white">Prodigmar</h2>
+            <h2 className="text-xl font-semibold text-white">ProPhecy</h2>
           </div>
 
           <p className="mt-6 text-sm text-gray-400 leading-relaxed">

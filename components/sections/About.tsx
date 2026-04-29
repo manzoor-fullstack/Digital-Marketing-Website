@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="relative py-28 bg-[#0A0A0A] overflow-hidden" id="about">
+    <section className="relative py-28  overflow-hidden" id="about">
       
       {/* Background Glow */}
       <div className="absolute top-[-80px] left-[-80px] w-[250px] h-[250px] bg-purple-500 blur-[120px] opacity-20"></div>
@@ -16,7 +16,7 @@ export default function About() {
         {/* 🔹 LEFT CONTENT */}
         <div>
           <Reveal>
-            <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white leading-tight">
               We Build 
               <span className="bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text">
                 {" "}Digital Experiences
@@ -70,7 +70,7 @@ export default function About() {
 
           {/* Glass Card / Image Placeholder */}
           <div className="relative h-80 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center">
-            <span className="text-gray-400">Your Image / Video</span>
+            <img src="images/Faiz&Manzoor.jpg" alt="" />
           </div>
         </motion.div>
 

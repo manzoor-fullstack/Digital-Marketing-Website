@@ -32,9 +32,9 @@ html {
 }
 
 /* Premium dark theme */
-body {
+/* body {
   @apply bg-[#0A0A0A] text-white;
-}
+} */
 
 /* Reusable container */
 .container-custom {
