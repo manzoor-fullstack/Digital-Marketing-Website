@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { ComponentType, MouseEvent, useState } from "react";
 import { motion } from "framer-motion";
 
+interface CardProps {
+  title: string;
+  Icon: ComponentType<{ size: number }>;
+}
 
-export default function Card({ title, Icon }: any) {
+
+export default function Card({ title, Icon }: CardProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleMove = (e: any) => {
+  const handleMove = (e: MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     setPosition({
       x: e.clientX - rect.left,

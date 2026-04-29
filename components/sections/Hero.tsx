@@ -8,8 +8,8 @@ export default function Hero() {
     const offset = useParallax(0.5);
 
   return (
-    <section className="h-screen flex items-center justify-center relative overflow-hidden">
-      
+    <section className="h-screen flex items-center justify-center relative overflow-hidden" id="home">
+
       {/* Background Glow */}
       <div style={{ transform: `translateY(${offset}px)` }} className="absolute w-[500px] h-[500px] bg-orange-500 blur-[150px] opacity-20 rounded-full top-[-100px]"></div>
 

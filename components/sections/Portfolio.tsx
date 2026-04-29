@@ -3,6 +3,20 @@
 import { motion } from "framer-motion";
 import Reveal from "../ui/Reveal";
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
 const projects = [
   {
     title: "SaaS Dashboard UI",
@@ -23,7 +37,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section className="relative py-28 bg-[#0A0A0A] overflow-hidden">
+    <section className="relative py-28 bg-[#0A0A0A] overflow-hidden" id="portfolio">
 
       {/* 🔥 Background Glow (same system as About) */}
       <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-purple-500 blur-[150px] opacity-20"></div>
@@ -50,10 +64,11 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-3 gap-8 mt-16">
 
           {projects.map((project, index) => (
-            <motion.div
+            <motion.div 
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={container}
+              initial="hidden"
+              whileInView="show"
               transition={{ delay: index * 0.15 }}
               viewport={{ once: true }}
               className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl"

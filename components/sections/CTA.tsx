@@ -5,7 +5,7 @@ import Reveal from "../ui/Reveal";
 
 export default function CTA() {
   return (
-    <section className="relative py-28 bg-[#0A0A0A] overflow-hidden">
+    <section className="relative py-28 bg-[#0A0A0A] overflow-hidden" id="contact">
 
       {/* 🔥 Background Glow */}
       <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-purple-500 blur-[150px] opacity-20"></div>
