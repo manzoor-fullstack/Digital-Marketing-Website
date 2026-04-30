@@ -25,9 +25,8 @@ export default function About() {
           </Reveal>
 
           <Reveal>
-            <p className="mt-6 text-gray-400 leading-relaxed">
-              We are a creative agency focused on delivering high-quality digital
-              products that help brands grow, scale, and stand out in the market.
+            <p className="mt-6 text-gray-300 leading-relaxed">
+             At Prophecy Software House, we redefine the boundaries of digital excellence by engineering high-octane technology solutions that serve as the blueprint for the future. We are a high-velocity powerhouse dedicated to dismantling complex business challenges through elite Software Development, Advanced AI, and precision Analytics. By fusing industrial-grade Cloud Services with seamless IT Solutions, we build scalable infrastructures that provide our clients with a definitive and dominant market advantage. Our approach to UI/UX Design pushes the envelope of innovation, ensuring that every interface is a striking, high-performance asset designed for maximum impact. We don't just provide services; we deliver strategic technical mastery that replaces legacy limitations with agile, future-proof systems. Our mission is to transform raw concepts into revenue-driving realities, ensuring your business stays ahead of the curve in an evolving global landscape. We partner with visionaries to build high-impact digital ecosystems that outpace the competition and set new industry standards. Every line of code we write is a commitment to excellence, reliability, and the pursuit of technological superiority. The future is not something we wait for it is the reality we build every single day at Prophecy Software House.
             </p>
           </Reveal>
 
@@ -40,8 +39,8 @@ export default function About() {
               viewport={{ once: true }}
               className="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md"
             >
-              <h3 className="text-2xl font-bold text-white">50+</h3>
-              <p className="text-gray-400 text-sm mt-1">Projects Completed</p>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text">50+</h3>
+              <p className="text-gray-300 mt-1">Projects Completed</p>
             </motion.div>
 
             <motion.div
@@ -51,8 +50,8 @@ export default function About() {
               viewport={{ once: true }}
               className="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md"
             >
-              <h3 className="text-2xl font-bold text-white">5+</h3>
-              <p className="text-gray-400 text-sm mt-1">Years Experience</p>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text">5+</h3>
+              <p className="text-gray-300 mt-1">Years Experience</p>
             </motion.div>
 
           </div>
@@ -70,7 +69,7 @@ export default function About() {
 
           {/* Glass Card / Image Placeholder */}
           <div className="relative h-80 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center">
-            <img src="images/Faiz&Manzoor.jpg" alt="" />
+            <img src="images/about-logo.png" alt="" />
           </div>
         </motion.div>
 

@@ -2,27 +2,37 @@
 
 import Card from "../ui/Card";
 import {
-  PenTool,
-  Video,
-  Camera,
+  Code2,
+  Brain,
+  BarChart3,
+  Cloud,
+  Headset,
   MonitorSmartphone,
 } from "lucide-react";
 
 const services = [
   {
-    title: "Graphic Design",
-    icon: PenTool,
+    title: "Software Development",
+    icon: Code2,
   },
   {
-    title: "Video Editing",
-    icon: Video,
+    title: "AI Solutions",
+    icon: Brain,
   },
   {
-    title: "Photoshoots",
-    icon: Camera,
+    title: "Data & Analytics",
+    icon: BarChart3,
   },
   {
-    title: "UI/UX Design",
+    title: "Cloud Services",
+    icon: Cloud,
+  },
+  {
+    title: "IT Solutions & Consultation",
+    icon: Headset,
+  },
+  {
+    title: "UI/UX Designs",
     icon: MonitorSmartphone,
   },
 ];

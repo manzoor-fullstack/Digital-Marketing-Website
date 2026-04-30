@@ -29,6 +29,9 @@ export default function Navbar() {
         {/* Logo */}
         <h1 className="text-white font-bold text-xl">
           ProPhecy
+          {/* <img src="images/logo-pro.jpeg" alt="logo"
+          className="w-18 h-12 object-cover"
+          /> */}
         </h1>
 
         {/* Links */}
@@ -73,8 +76,7 @@ export default function Navbar() {
   >
     Contact
   </Link>
-  {/* Theme Button */}
-  <ThemeToggle />
+  {/* <ThemeToggle /> */}
 
 </nav>
 

@@ -29,8 +29,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-6 text-sm text-gray-400 leading-relaxed">
-            We design and build modern digital experiences that help
-            businesses grow, scale, and stand out in the digital world.
+            We redefine the boundaries of digital excellence by engineering high-octane technology solutions that serve as the blueprint for the future.
           </p>
         </div>
 
@@ -39,11 +38,11 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-5">Services</h3>
 
           <ul className="space-y-3 text-sm text-gray-400">
-            <li><Link href="#" className="hover:text-white transition">Web Development</Link></li>
+            <li><Link href="#" className="hover:text-white transition">AI Solutions</Link></li>
+            <li><Link href="#" className="hover:text-white transition">Software Development</Link></li>
             <li><Link href="#" className="hover:text-white transition">UI/UX Design</Link></li>
-            <li><Link href="#" className="hover:text-white transition">SEO Optimization</Link></li>
-            <li><Link href="#" className="hover:text-white transition">Digital Marketing</Link></li>
-            <li><Link href="#" className="hover:text-white transition">Brand Identity</Link></li>
+            <li><Link href="#" className="hover:text-white transition">Data & Analytics</Link></li>
+            <li><Link href="#" className="hover:text-white transition">Cloud Services</Link></li>
           </ul>
         </div>
 
@@ -68,14 +67,14 @@ export default function Footer() {
 
             <div className="flex items-center gap-2">
               <Mail size={16} className="text-orange-400" />
-              <span>info@prodigmar.com</span>
+              <span>contact@prophecysoftwarehouse.com</span>
             </div>
 
             <div className="flex items-start gap-2">
               <MapPin size={16} className="text-purple-400 mt-1" />
               <span>
-                128 City Road, London<br />
-                EC1V 2NX, United Kingdom
+                Rahimyar Khan, Punjab<br />
+                Pakistan
               </span>
             </div>
 
@@ -101,7 +100,7 @@ export default function Footer() {
 
       {/* 🔻 Bottom Bar */}
       <div className="border-t border-white/10 mt-16 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Prodigmar. All rights reserved.
+        © {new Date().getFullYear()} prophecy. All rights reserved.
       </div>
 
     </footer>

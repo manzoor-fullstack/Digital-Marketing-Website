@@ -19,39 +19,42 @@ export default function Card({ title, Icon }: CardProps) {
   };
 
   return (
-    <motion.div
-      onMouseMove={handleMove}
-      initial={{ opacity: 0, y: 80 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="relative group rounded-2xl p-[1px] bg-gradient-to-r from-orange-500/40 to-purple-500/40"
-    >
-      
-      {/* Glow Effect */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500"
-        style={{
-          background: `radial-gradient(300px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.15), transparent 40%)`,
-        }}
-      />
+   <motion.div
+  onMouseMove={handleMove}
+  initial={{ opacity: 0, y: 80 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="relative group rounded-3xl p-[1px] bg-gradient-to-r from-orange-500/40 to-purple-500/40"
+>
 
-      {/* Card Content */}
-      <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl p-10 text-center border border-white/10 group-hover:border-white/20 transition">
-        
-        {/* Icon */}
-        <div className="flex justify-center mb-6">
-          <div className="p-5 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 text-white group-hover:scale-110 transition duration-300">
-            <Icon size={36} />
-          </div>
-        </div>
+  {/* Glow Effect */}
+  <div
+    className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 rounded-3xl"
+    style={{
+      background: `radial-gradient(300px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.15), transparent 40%)`,
+    }}
+  />
 
-        {/* Title */}
-        <h3 className="text-lg font-semibold text-white">
-          {title}
-        </h3>
+  {/* Card Content */}
+  <div className="relative h-full bg-white/5 backdrop-blur-xl rounded-3xl p-8 flex flex-col items-center text-center border border-white/10 group-hover:border-white/20 transition">
 
+    {/* Icon Wrapper */}
+    <div className="mb-6">
+      <div className="p-5 rounded-2xl bg-gradient-to-r from-orange-500 to-pink-500 text-white group-hover:scale-110 transition duration-300 shadow-lg">
+        <Icon size={34} />
       </div>
-    </motion.div>
+    </div>
+
+    {/* Title */}
+    <h3 className="text-xl font-semibold text-white tracking-wide">
+      {title}
+    </h3>
+
+    {/* Optional subtle underline accent */}
+    <div className="w-12 h-[2px] bg-gradient-to-r from-orange-500 to-pink-500 mt-4 opacity-60 group-hover:w-16 transition-all duration-300 rounded-full"></div>
+
+  </div>
+</motion.div>
   );
 }

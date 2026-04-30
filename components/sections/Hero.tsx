@@ -27,7 +27,7 @@ export default function Hero() {
           </span>
         </motion.h1>
 
-        <p className="mt-6 text-gray-400 max-w-xl mx-auto">
+        <p className="mt-6 text-gray-900 max-w-xl mx-auto dark:text-gray-300">
           High-end websites & branding that drive real business growth.
         </p>
 
@@ -36,7 +36,7 @@ export default function Hero() {
             Start Project
           </button>
 
-          <button className="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10">
+          <button className="px-6 py-3 rounded-full border border-white/20 hover:bg-white/10 dark:hover:bg-white/10 transition">
             View Work
           </button>
         </div>

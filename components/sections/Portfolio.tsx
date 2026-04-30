@@ -22,19 +22,19 @@ const projects = [
     title: "SaaS Dashboard UI",
     category: "Web Application",
     description: "Modern analytics dashboard with clean UI and data visualization.",
-    image: "images/uni1.jpg",
+    image: "images/dashboard.png",
   },
   {
     title: "E-Commerce Platform",
     category: "Full Stack Development",
     description: "Scalable online store with cart, payments, and admin panel.",
-    image: "images/uni2.jpg",
+    image: "images/e-commerce.webp",
   },
   {
     title: "Brand Identity System",
     category: "UI/UX & Branding",
     description: "Complete brand design including logo, colors, and guidelines.",
-    image: "images/uni3.jpg",
+    image: "images/ui-design.webp",
   },
 ];
 
@@ -79,7 +79,9 @@ export default function Portfolio() {
 
               {/* Image Placeholder */}
               <div className="h-72 bg-gradient-to-br from-gray-900 to-black group-hover:scale-110 transition duration-700">
-                <img src={project.image} alt="" />
+                <img src={project.image} alt="Project Image"
+                  className="w-full h-full object-cover object-center opacity-80"
+                />
               </div>
 
               {/* Overlay */}
