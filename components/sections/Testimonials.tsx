@@ -5,14 +5,14 @@ import Reveal from "../ui/Reveal";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechNova",
+    name: "Burhan Tahir",
+    role: "CEO, DEVFINIZ PVT LTD",
     feedback:
       "This team completely transformed our digital presence. The design quality and attention to detail exceeded expectations.",
   },
   {
-    name: "Ali Khan",
-    role: "Founder, ShopEase",
+    name: "Usman Khalid",
+    role: "CEO, CureLogics",
     feedback:
       "Our conversion rate doubled after the new website launch. Highly professional and reliable team.",
   },
